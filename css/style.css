@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
@@ -42,9 +44,106 @@ header {
 }
 
 .texto-banner{
+  width: 495px;
   color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+}
+
+.texto-banner h1{
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 70px;
+ font-weight: bold;
+}
+
+.texto-banner a{
+  background-color: #C31616;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px;
+  border-radius: 5px;
+}
+.texto-banner p{
+  margin-bottom: 50px;
 }
 
 .posicao-texto{
   justify-content: flex-end;
+}
+
+.secao-jogos{
+  background-color: black;
+}
+
+.jogos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jogos img{
+  width: 150px;
+}
+
+.secao-sobre{
+  background-image: url(../img/Fundo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texto-sobre{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.barras{
+  width:30px;
+  display: none;
+}
+
+@media screen and (max-width: 1200px){
+  .container-grid{
+    width: 90%;
+  }
+  .menu a{
+    font-size: 16px;
+  }
+  .logo{
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1{
+    color:blue;
+  }
+
+  .barras{
+    display: inline-block;
+  }
+
+  .menu{
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right: 60;
+    background-color: black;
+  }
+
+  .menu a{
+    text-align: center;
+    padding: 15px;
+  }
+
+  .posicionamento-header{
+    position: relative;
+  }
 }
