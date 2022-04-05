@@ -13,7 +13,7 @@
 </head>
 
 
-<body>
+<body onload="mostrarPopup()">
 
   <header>
     <div class="container-grid posicionamento-header">
@@ -63,21 +63,156 @@
       </div>
     </div>
   </section>
+  <section class="secao-partidas">
+    <div class="partidas container">
+      <div class="games-aovivo">
+        <h2>Ao<br>Vivo</h2>
+        <div class="partida">
+          <div class="time1">
+            <p>SK</p>
+            <img src="img/Sklogo.jpg" alt="Logo time 1">
+          </div>
+          <p>VS</p>
+          <div class="time2">
+            <img src="img/Sklogo.jpg" alt="Logo time 2">
+            <p>Mortal</p>
+          </div>
+        </div>
+      </div>
+      <div class="games-embreve">
+        <div class="partidas">
+          <div class="games-aovivo">
+            <h2>Em<br>Breve</h2>
+            <div class="partida">
+              <div class="time1">
+                <p>SK</p>
+                <img src="img/Sklogo.jpg" alt="Logo time 1">
+              </div>
+              <p>VS</p>
+              <div class="time2">
+                <img src="img/Sklogo.jpg" alt="Logo time 2">
+                <p>Mortal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="secao-noticias">
+    <div class="container">
+      <div class="bloco-noticias">
+        <h2>Notícias</h2>
+        <div class="cardnews">
+          <img src="img/cardnews.jpg" alt="Foto de uma jogadora profissional">
+          <h3>Titulo da noticia</h3>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Diuretics paradis num copo é motivis de denguis.Todo mundo vê os porris</p>
+        </div>
+      </div>
+    </div>
+    <aside class="next-games">
+      <h2>Proximos Jogos</h2>
+      <div class="next-games-bg">
+        <div class="next-games-match">
+          <div class="teams">
+            <p>SK</p>
+            <img src="img/Sklogo.jpg" alt="Logo time">
+          </div>
+          <p>VS</p>
+          <img src="img/Sklogo.jpg" alt="Logo time">
+          <p>SK</p>
+        </div>
+        <!--Fim Teams-->
+        <p>05/07/2022 19:00</p>
+        <div class="next-games-match">
+          <div class="teams">
+            <p>SK</p>
+            <img src="img/Sklogo.jpg" alt="Logo time">
+          </div>
+          <p>VS</p>
+          <img src="img/Sklogo.jpg" alt="Logo time">
+          <p>SK</p>
+        </div>
+        <!--Fim Teams-->
+        <p>05/07/2022 19:00</p>
+        <div class="next-games-match">
+          <div class="teams">
+            <p>SK</p>
+            <img src="img/Sklogo.jpg" alt="Logo time">
+          </div>
+          <p>VS</p>
+          <img src="img/Sklogo.jpg" alt="Logo time">
+          <p>SK</p>
+        </div>
+        <!--Fim Teams-->
+        <p>05/07/2022 19:00</p>
+        <div class="next-games-match">
+          <div class="teams">
+            <p>SK</p>
+            <img src="img/Sklogo.jpg" alt="Logo time">
+          </div>
+          <p>VS</p>
+          <img src="img/Sklogo.jpg" alt="Logo time">
+          <p>SK</p>
+        </div>
+        <!--Fim Teams-->
+        <p>05/07/2022 19:00</p>
+      </div>
+    </aside>
+  </section>
+
+
+  <footer>
+    <div class="container rodape">
+      <div class="links-footer">
+        <div class="links">
+          <h2>Páginas</h2>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Campeonato</a></li>
+            <li><a href="#">Resultados</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Login/Cadastro</a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <h2>Links Uteis</h2>
+          <ul>
+            <li><a href="#">Regras de utilização</a></li>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Central de Ajuda</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="logo-rodape">
+        <img src="img/logo.png" alt="Logo E-players">
+      </div>
+      <div class="sociais">
+        <h2>Faça parte do nosso clan, receba noticias, promoções e spam!!!</h2>
+        <form action="">
+          <input id="campo-email" type="email" placeholder="E-mail" required>
+          <button onclick="enviarEmail()" class="botao-cadastrar">Cadastrar</button>
+        </form>
+        <div class="siga-nos">
+          <h2>Siga-nos em:</h2>
+          <li><a href="#"><img src="img/insta.png" alt="Logo do insta"></a></li>
+          <li><a href="#"><img src="img/face.png" alt="Logo do face"></a></li>
+          <li><a href="#"><img src="img/youtube.png" alt="Logo do youtube"></a></li>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
 
   <!-- Link para o JS do Bootstrap (não remover) -->
+  <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
-  <script>
-    let menu = document.getElementById("menu")
 
-    function mostrarMenu() {
-      if (menu.style.display == "none") {
-        menu.style.display = "flex"
-      } else {
-        menu.style.display = "none"
-      }
-    }
-  </script>
 </body>
 
 </html>
