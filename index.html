@@ -13,14 +13,14 @@
 </head>
 
 
-<body onload="mostrarPopup()">
+<body onload="renderizarNoticias()">
 
   <header>
     <div class="container-grid posicionamento-header">
       <a href="">
         <img class="logo" src="img/logo.png" alt="">
       </a>
-      <a href="#" onclick=mostrarMenu()>
+      <a href="#" id="barras">
         <img class="barras" src="img/bars.svg" alt="">
       </a>
       <nav id="menu" class="menu">
@@ -32,7 +32,12 @@
       </nav>
     </div>
   </header>
-  <div class="banner">
+  <div class="carrosel" id="carrosel">
+    <img src="img/banner_pilotos.png" alt="Banner Pilotos">
+    <img src="img/banner_lol.png" alt="Banner Lol">
+    <img src="img/banner_cs.png" alt="Banner CS">
+  </div>
+  <!-- <div class="banner">
     <div class="container-grid posicao-texto">
       <div class="texto-banner">
         <h1>Liga E-players</h1>
@@ -40,7 +45,7 @@
         <a href="">Inscreva-se</a>
       </div>
     </div>
-  </div>
+  </div> -->
   <section class="secao-jogos">
     <div class="jogos container">
       <a href=""><img src="img/f1.png" alt="Logo da Formula 1"></a>
@@ -102,62 +107,65 @@
     <div class="container">
       <div class="bloco-noticias">
         <h2>Notícias</h2>
-        <div class="cardnews">
+        <div id="espaco-noticias" class="content-news">
+
+        </div>
+        <!-- <div class="cardnews">
           <img src="img/cardnews.jpg" alt="Foto de uma jogadora profissional">
           <h3>Titulo da noticia</h3>
           <p>Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Diuretics paradis num copo é motivis de denguis.Todo mundo vê os porris</p>
         </div>
+      </div> -->
       </div>
-    </div>
-    <aside class="next-games">
-      <h2>Proximos Jogos</h2>
-      <div class="next-games-bg">
-        <div class="next-games-match">
-          <div class="teams">
-            <p>SK</p>
+      <aside class="next-games">
+        <h2>Proximos Jogos</h2>
+        <div class="next-games-bg">
+          <div class="next-games-match">
+            <div class="teams">
+              <p>SK</p>
+              <img src="img/Sklogo.jpg" alt="Logo time">
+            </div>
+            <p>VS</p>
             <img src="img/Sklogo.jpg" alt="Logo time">
-          </div>
-          <p>VS</p>
-          <img src="img/Sklogo.jpg" alt="Logo time">
-          <p>SK</p>
-        </div>
-        <!--Fim Teams-->
-        <p>05/07/2022 19:00</p>
-        <div class="next-games-match">
-          <div class="teams">
             <p>SK</p>
-            <img src="img/Sklogo.jpg" alt="Logo time">
           </div>
-          <p>VS</p>
-          <img src="img/Sklogo.jpg" alt="Logo time">
-          <p>SK</p>
-        </div>
-        <!--Fim Teams-->
-        <p>05/07/2022 19:00</p>
-        <div class="next-games-match">
-          <div class="teams">
+          <!--Fim Teams-->
+          <p>05/07/2022 19:00</p>
+          <div class="next-games-match">
+            <div class="teams">
+              <p>SK</p>
+              <img src="img/Sklogo.jpg" alt="Logo time">
+            </div>
+            <p>VS</p>
+            <img src="img/Sklogo.jpg" alt="Logo time">
             <p>SK</p>
-            <img src="img/Sklogo.jpg" alt="Logo time">
           </div>
-          <p>VS</p>
-          <img src="img/Sklogo.jpg" alt="Logo time">
-          <p>SK</p>
-        </div>
-        <!--Fim Teams-->
-        <p>05/07/2022 19:00</p>
-        <div class="next-games-match">
-          <div class="teams">
+          <!--Fim Teams-->
+          <p>05/07/2022 19:00</p>
+          <div class="next-games-match">
+            <div class="teams">
+              <p>SK</p>
+              <img src="img/Sklogo.jpg" alt="Logo time">
+            </div>
+            <p>VS</p>
+            <img src="img/Sklogo.jpg" alt="Logo time">
             <p>SK</p>
-            <img src="img/Sklogo.jpg" alt="Logo time">
           </div>
-          <p>VS</p>
-          <img src="img/Sklogo.jpg" alt="Logo time">
-          <p>SK</p>
+          <!--Fim Teams-->
+          <p>05/07/2022 19:00</p>
+          <div class="next-games-match">
+            <div class="teams">
+              <p>SK</p>
+              <img src="img/Sklogo.jpg" alt="Logo time">
+            </div>
+            <p>VS</p>
+            <img src="img/Sklogo.jpg" alt="Logo time">
+            <p>SK</p>
+          </div>
+          <!--Fim Teams-->
+          <p>05/07/2022 19:00</p>
         </div>
-        <!--Fim Teams-->
-        <p>05/07/2022 19:00</p>
-      </div>
-    </aside>
+      </aside>
   </section>
 
 
@@ -209,6 +217,7 @@
 
 
   <!-- Link para o JS do Bootstrap (não remover) -->
+  <script src="js/jquery-3.6.0.js"></script>
   <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>

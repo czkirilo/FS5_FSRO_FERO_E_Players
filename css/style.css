@@ -43,6 +43,14 @@ header {
   background-size: cover;
 }
 
+#carrosel img {
+  display: none;
+}
+
+.banner-ativo {
+  display: flex;
+}
+
 .texto-banner {
   width: 495px;
   color: white;
@@ -370,6 +378,10 @@ footer {
   .menu a {
     text-align: center;
     padding: 15px;
+  }
+
+  .menu-ativo {
+    display: flex;
   }
 
   .posicionamento-header {
